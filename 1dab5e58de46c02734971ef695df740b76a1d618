@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAGlX///zI\u003d",
+        "filename": ".project",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2012-06-15T04:19:08Z",
+      "side": 1,
+      "message": "don\u0027t commit these, m2e automatically makes a .project file when you import it from the pom.xml",
+      "revId": "1dab5e58de46c02734971ef695df740b76a1d618",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAGlX///zo\u003d",
+        "filename": "src/main/java/com/google/gerrit/plugins/LogViewerServlet.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2012-06-15T04:19:08Z",
+      "side": 1,
+      "message": "You need to verify the caller is an Administrator. Its risky to let any user read a log.",
+      "revId": "1dab5e58de46c02734971ef695df740b76a1d618",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAGlX///zk\u003d",
+        "filename": "src/main/java/com/google/gerrit/plugins/LogViewerServlet.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2012-06-15T04:19:08Z",
+      "side": 1,
+      "message": "resolve isn\u0027t necessary. Just do new File(logDir, logName)",
+      "revId": "1dab5e58de46c02734971ef695df740b76a1d618",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAGlX///zg\u003d",
+        "filename": "src/main/java/com/google/gerrit/plugins/LogViewerServlet.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2012-06-15T04:19:08Z",
+      "side": 1,
+      "message": "headers must be set before you output the data",
+      "revId": "1dab5e58de46c02734971ef695df740b76a1d618",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAGlX///zc\u003d",
+        "filename": "src/main/java/com/google/gerrit/plugins/LogViewerServlet.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2012-06-15T04:19:08Z",
+      "side": 1,
+      "message": "log files aren\u0027t html. they are text. either make this text/plain or wrap them up nicely in html with proper escaping.",
+      "revId": "1dab5e58de46c02734971ef695df740b76a1d618",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAGlX///zM\u003d",
+        "filename": "src/main/java/com/google/gerrit/plugins/LogViewerServlet.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2012-06-15T04:19:08Z",
+      "side": 1,
+      "message": "If you are treating a log file as raw text, just use FileInputStream to read the file, and getOutputStream to send the file. That way there is no character encoding done in the server and the log the browser gets is identical to the log the server has. This may remove some issues with data if there is an oddly encoded character in the log and that odd character is the error message that you are trying to discover.",
+      "revId": "1dab5e58de46c02734971ef695df740b76a1d618",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
